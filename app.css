@@ -1,0 +1,199 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 10% 7% 10% 7%;
+    font-size: 16px;
+    background-color: var(--GrayishBlue);
+    font-family: 'Karla', sans-serif;;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    
+}
+.join-card{
+    height: 100%;
+    background-color: white;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px 5px 0 0 ;
+    
+}
+.join-card h1{
+    color: var(--Cyan);
+    font-size: 20px;
+    padding: .3em 0 .5em 0;
+    font-weight: 700;
+}
+.join-card h2{
+    color: var(--BrightYellow);
+    font-size: 17px;
+    padding: .5em 2em .5em 0;
+   
+    letter-spacing: -1px;
+}
+.join-card p {
+    color: var(--GrayishBlue);
+    padding: 0.5em 0 .5em 0;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+.card-row{
+    width: 100%;
+}
+.monthly-card{
+    padding: 5% 5% 5% 5%;
+    background-color: hsl(179, 72%, 35%);
+}
+.monthly-card h2{
+    color: white;
+    font-size: 20px;
+    padding: .3em 0 .5em 0;
+    font-weight: 700;
+}
+.monthly-card p {
+    color: white;
+    font-weight: 400;
+    
+}
+.dollar-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    width: 100%;
+    padding: .3em 0 .5em 0; 
+}
+.dollar-text p{
+    padding-left: 1em;
+    font-size: 15px;
+    color: var(--LightGray);
+}
+.dollar-text h3{
+    font-size: 2em;
+    color: white;
+    font-size: 2em;
+}
+.btn-signup{
+    border: none;
+    text-align: center;
+    width: 100%;
+    padding: .7em 0 .7em 0 ;
+    color: white;
+    background-color: var(--BrightYellow);
+    border-radius: 5px;
+    margin: 2em 0 .5em 0;
+    }
+
+.whyus-card{
+    background-color: var(--Cyan);
+    padding: 5% 5% 5% 5%;
+    border-radius: 0 0 5px 5px;
+}
+.whyus-card h4{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+.whyus-card p {
+    color: var(--LightGray);
+    padding-bottom: 1px;
+}
+
+@media only screen and (min-width:500px) {
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+        }
+        .container{
+            width: 434px;
+            height: 645px;
+        }
+}
+
+@media only screen and (min-width:580px) {
+    body{
+        margin: 10% 2% 10% 2%;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .join-card{
+        padding: 5% 10% 5% 7%;
+    }
+    .card-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+    .monthly-card{
+        padding: 5% 5% 5% 5%;
+        border-bottom-left-radius: 5px;
+        height: 250px;
+        width: 50%;
+    }
+
+    .whyus-card{
+        border-radius: 0 0 5px 0;
+        height: 250px;
+        width: 50%;
+    }
+    .btn-signup{
+        font-weight: 700;
+        padding: 1em 0 1em 0;
+        box-shadow: 0px 2px 8px hsl(210, 3%, 24%);
+    }
+    
+    .whyus-p p{
+        font-size: 15px;
+        padding: 0 0 3px 0 ;
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    .container{
+        width: 652.81px;
+        height: 441.28px;
+    } 
+    .join-card h1 {
+        font-size: 25px;
+    }
+    .join-card p {
+        font-size: 16px;
+    }
+    .join-card h2 {
+        font-size: 18px;
+    }
+    .monthly-card h2 {
+        font-size: 22px;
+    }
+    .whyus-card h4 {
+        font-size: 22px; 
+    }
+}
