@@ -43,7 +43,6 @@ body{
     color: var(--BrightYellow);
     font-size: 17px;
     padding: .5em 2em .5em 0;
-   
     letter-spacing: -1px;
 }
 .join-card p {
@@ -189,6 +188,7 @@ body{
     }
     .join-card h2 {
         font-size: 18px;
+        letter-spacing: 0;
     }
     .monthly-card h2 {
         font-size: 22px;
